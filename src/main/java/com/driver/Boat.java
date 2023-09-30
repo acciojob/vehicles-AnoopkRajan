@@ -8,22 +8,31 @@ package com.driver;
  *
  * @author anoop
  */
-public class Boat implements WaterVehicle {
-
+public class Boat implements WaterVehicle{
     String name;
     int capacity;
 
-    public Boat(String name, int capacity) {
-        this.name = name;
-        this.capacity = capacity;
+    public String getName() {
+        return name;
     }
 
-    @Override
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public Boat(){
+
+    }
+
+    public Boat(String name,int capacity){
+        this.capacity = capacity;
+        this.name = name;
+    }
+
     public String getVehicleName() {
         return name;
     }
 
-    @Override
     public int getVehicleCapacity() {
         return capacity;
     }
